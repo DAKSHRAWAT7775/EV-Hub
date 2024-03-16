@@ -1,0 +1,5 @@
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#40BC2C</item>
+    </style>
+</resources>

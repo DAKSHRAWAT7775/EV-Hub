@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="285dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="188dp"
+        android:text="Electric Station"
+        android:textColor="#40BC2C"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/firstpage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <!-- Apply custom button style here --><![CDATA[
+    app:layout_constraintTop_toBottomOf="@id/textViewDescription"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:onClick="getCurrentLocation" />
+
+    ]]><!-- Apply custom button style here --><![CDATA[
+    app:layout_constraintTop_toBottomOf="@id/btnGetCurrentLocation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:onClick="searchNearbyStations" />
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/btnGetCurrentLocation"
+        style="@style/CustomButtonStyle"
+        android:layout_width="236dp"
+        android:layout_height="100dp"
+        android:text="Get Current Location"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="369dp"
+        tools:layout_editor_absoluteY="1525dp" />
+
+    <Button
+        android:id="@+id/btnSearchNearbyStations"
+        style="@style/CustomButtonStyle"
+        android:layout_width="246dp"
+        android:layout_height="87dp"
+        android:text="Search Nearby Stations"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="369dp"
+        tools:layout_editor_absoluteY="1673dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
